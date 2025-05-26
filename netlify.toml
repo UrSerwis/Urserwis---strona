@@ -6,6 +6,7 @@
   to = "/admin/index.html"
   status = 200
 
-IDENTITY_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/recover"
-IDENTITY_CONFIRMATION_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/confirm"
-IDENTITY_INVITE_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/invite"
+[context.production.environment]
+  IDENTITY_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/recover"
+  IDENTITY_CONFIRMATION_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/confirm"
+  IDENTITY_INVITE_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/invite"
