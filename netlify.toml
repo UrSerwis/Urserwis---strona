@@ -2,7 +2,7 @@
   publish = "."
 
 [[redirects]]
-  from = "/test-redirect"
+  from = "/admin/*"
   to = "/admin/index.html"
   status = 200
 
