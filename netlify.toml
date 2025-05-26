@@ -7,5 +7,6 @@
   status = 200
 
 [context.production.environment]
-  IDENTITY_REDIRECT_URL = "/admin/"
-  IDENTITY_CONFIRMATION_REDIRECT_URL = "/admin/"
+  IDENTITY_REDIRECT_URL = "https://urserwis.netlify.app/admin/"
+  IDENTITY_CONFIRMATION_REDIRECT_URL = "https://urserwis.netlify.app/admin/"
+  IDENTITY_INVITE_REDIRECT_URL = "https://urserwis.netlify.app/admin/"
