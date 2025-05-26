@@ -1,0 +1,6 @@
+[build]
+  publish = "public"
+
+[context.production.environment]
+  IDENTITY_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/recover"
+  IDENTITY_CONFIRMATION_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/confirm"
