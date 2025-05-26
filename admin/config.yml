@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: 'pl'
+
+collections:
+  - name: "posty"
+    label: "Wpisy na blogu"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Treść", name: "body", widget: "markdown" }
+
+  - name: "galeria"
+    label: "Galeria zdjęć"
+    folder: "gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Obraz", name: "image", widget: "image" }
+      - { label: "Opis", name: "description", widget: "text", required: false }
