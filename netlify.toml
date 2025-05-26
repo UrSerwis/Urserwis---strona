@@ -1,5 +1,5 @@
 [build]
-  publish = "public"
+  publish = "."
 
 [context.production.environment]
   IDENTITY_REDIRECT_URL = "https://urserwis.netlify.app/admin/#/recover"
